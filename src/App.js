@@ -15,7 +15,8 @@ function App() {
     {title: "Haven't Been Around for a While",
     description: "I've been off the platform for a while now. I hope everyone is doing well. Been busy learning new code and stuff."},
   ]
-  return (
+
+return (
     <div className="App">
       {/* NOTE App is similar to root or App in Vue */}
       <header className="App-header">

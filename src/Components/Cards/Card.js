@@ -5,15 +5,13 @@ import Button from '../ButtonComponent/Button'
 // NOTE similar to vue, we pass in the props of objs to the "class", in this case in the form of an obj with the properties/keys of title & description
 function Card({title, description}){
 
-    
-
     return(
         // NOTE since these are both properties, they will be injected into the JSX when the acutal .map() fires within the app rendering.
         <div>
             <div className="card-container">
                 <div className="heading">
                     <h1 className="heading-one">{title}</h1>
-                    <Button/>
+                    <Button />
                 </div>
                 <p className="description">{description}</p>
                 <br/>
