@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import Card from './Card'
 
 class Cards extends Component {
+  // NOTE dummie data that will be used by the Card component when it is rendered. The Card returns the formatting for the data, and the .map() iterates over the given array of cards
     state = {
         cards: [
             {title: "New Blog Post",
@@ -17,8 +18,12 @@ class Cards extends Component {
     render(){
         return(
             <React.Fragment>
-                {this.state.cards.map((card, index) => {
-                    <Card key={card.index} title={card.title} description={card.description} />
+                {/* NOTE This is where custome JSX components can be loaded in. They can have different classes and effects layered on top of them to become more dynamic.*/}
+                {/* NOTE In this case, one could use .map() to iterate over an array of Objs to render multiple cards  */}
+                {this.state.cards.map(card => {
+                    return(
+                        <Card key={card.index} title={card.title} description={card.description} />
+                    )
                 })}
             </React.Fragment>
         )
