@@ -10,8 +10,14 @@
     background-color: rgb(224, 222, 222);
 }
 
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
 .heading-one{
     font-size: large;
+    padding-left: 1em;
 }
 
 a:hover{

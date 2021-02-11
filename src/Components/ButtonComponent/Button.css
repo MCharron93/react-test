@@ -1,0 +1,10 @@
+.click{
+    color: red;
+    background-color: transparent;
+    border: none;
+    border-radius: 1em;
+}
+.click:hover{
+    background-color: red;
+    color: #e0dede;
+}
